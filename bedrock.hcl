@@ -29,7 +29,7 @@ serve {
     install = ["pip install streamlit"]
     script = [
         {sh = [
-              "streamlit hello --server.headless true --server.port ${BEDROCK_SERVER_PORT}",
+              "streamlit hello --server.headless true --server.port ${BEDROCK_SERVER_PORT} --browser.serverAddress ${BEDROCK_ENDPOINT_ID}.pub.playground.bdrk.ai",
         ]}
     ]
 
